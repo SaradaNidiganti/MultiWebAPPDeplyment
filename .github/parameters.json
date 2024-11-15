@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_mywebapprg1_name": {
+            "value": null
+        },
+        "sites_mywebapprg2_name": {
+            "value": null
+        },
+        "serverfarms_myAppSerRG2_name": {
+            "value": null
+        },
+        "profiles_myfrontdoorprofile_name": {
+            "value": null
+        },
+        "serverfarms_myAppServiceCACen_name": {
+            "value": null
+        }
+    }
+}
