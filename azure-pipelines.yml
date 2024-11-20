@@ -21,7 +21,7 @@ steps:
     location: 'Canada Central'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/SaradaNidiganti/MultiWebAPPDeplyment/refs/heads/main/.github/template.json'
-    overrideParameters: '-projectName .MultiWebAPPDeplyment'
+    csmParametersFileLink: 'https://raw.githubusercontent.com/SaradaNidiganti/MultiWebAPPDeplyment/refs/heads/main/.github/parameters.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
 
