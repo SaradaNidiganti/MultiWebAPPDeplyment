@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'ARMConnection-pipeline'
+    subscriptionId: '04cd1d64-9d1a-4fca-b4b8-975fc9762986'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'ARMPipeline-rg'
+    location: 'Canada Central'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/SaradaNidiganti/MultiWebAPPDeplyment/refs/heads/main/.github/template.json'
+    overrideParameters: '-projectName .MultiWebAPPDeplyment'
+    deploymentMode: 'Incremental'
+    deploymentName: 'DeployPipelineTemplate'
+
