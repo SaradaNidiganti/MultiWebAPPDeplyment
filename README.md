@@ -20,3 +20,6 @@ With this architecture:
 -->Identical App Service apps are deployed in two separate regions.
 -->Public traffic directly to the App Service apps is blocked.
 -->Azure Front Door is used route traffic to the primary/active region. The secondary region has an App Service that's up and running and ready to serve traffic if needed.
+
+CI/CD link:
+Continuous integration with Azure Pipelines - Azure Resource Manager | Microsoft Learn
